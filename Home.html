@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+       
+    .material-symbols-outlined {
+     font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+        color: white;
+        
+    }
+   
+   
+
+
+        body {
+            background:#E5D6FF;
+        }
+
+        .navbar {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            height: 60px;
+        }
+
+        .navbar p {
+            background: linear-gradient(to left, rgb(184, 150, 255) 47px, rgb(0, 246, 255) 131.6px, rgb(0, 255, 240) 100%);
+            background-clip: text;
+            color: transparent;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .blog-card {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            position: relative;
+            
+        }
+
+        .blog-card img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .blog-card::before {
+            content: "";
+            position: absolute;
+            top: -5px; 
+            right: -5px;
+            bottom: -5px;
+            left: -5px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            border: 2px solid transparent;
+            border-radius: 5px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .blog-card:hover::before {
+            opacity: 1;
+        }
+
+        .read-button {
+            background: linear-gradient(to left, rgb(184, 150, 255) 47px, rgb(0, 246, 255) 131.6px, rgb(0, 255, 240) 100%);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+        .read-button:hover{
+          
+           color: white;
+        }
+        .nav-icons{
+            align-items: end;
+        }
+        a {
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <p class="linear-text-gradient">Epam how to's?</p>
+        <div class="nav-icons">
+            <a href="./About.html" title="About">
+            <span class="material-symbols-outlined">
+                help
+                </span>
+            </a>
+            <a href="#">
+                 <span class="material-symbols-outlined">
+                home
+                </span>
+            </a>
+           
+        </div>   
+    </div>
+
+    <div class="blog-card">
+        <img src="https://www.epam.com/content/dam/epam/en/EPAM_office_about_3.jpg/_jcr_content/renditions/original./EPAM_office_about_3.jpg" alt="Blog Image">
+        <div class="blog-text">
+            <h3>How to set up your device</h3>
+            <p>This blog gives you simple and easy steps That will help you to set up your Laptop</p>
+            <!-- Button is wrapped in an <a> tag to make it navigate to another page when clicked -->
+            <a href="./disc.html"><button class="read-button">Read</button></a>
+        </div>
+    </div>
+
+    <div class="blog-card">
+        <img src="https://www.epam.com/content/dam/epam/en/EPAM_office_about_3.jpg/_jcr_content/renditions/original./EPAM_office_about_3.jpg" alt="Blog Image">
+        <div class="blog-text">
+            <h3>How to set up your device</h3>
+            <p>This blog gives you simple and easy steps That will help you to set up your Laptop</p>
+            <!-- Button is wrapped in an <a> tag to make it navigate to another page when clicked -->
+            <a href="./video_desc.html"><button class="read-button">Read</button></a>
+        </div>
+    </div>
+</body>
+</html>
